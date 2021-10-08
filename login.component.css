@@ -1,53 +1,20 @@
-.container {
-    width: 25rem;
-    height: 20rem;
-    background-color: #141414;
-    /* background-color: #fff; */
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    margin-left: 25%;
-  }
-  
-  .form-header {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 1rem;
-  }
-  .form-header img {
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-  }
-  .form-header section {
-    color: #ffffff;
-    align-self: center;
-    font-size: 2rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  input {
-    width: 50%;
-    height: 1.5rem;
-    border: none;
-  }
-  .input-field {
-    padding-left: 2rem;
-  }
-  section {
-    color: #ffffff;
-  }
-  
-  button {
-    margin-left: 3rem;
-    background-color: green;
-    width: 10rem;
-  }
-  
+body, html {   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body {
+    display:table-cell;
+    vertical-align:middle;
+}
+form {
+    display:table;/* shrinks to fit content */
+    margin:auto;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}   
