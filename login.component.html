@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="form-header">
+    <img src="/assets/UserLogIn.jpg" alt="" />
+    <section>Login</section>
+  </div>
+  <div class="form-bottom">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="input-field">
+        <section>Username</section>
+        <input type="text" />
+      </div>
+      <div class="input-field">
+        <section>password</section>
+        <input type="text" />
+      </div>
+    </form>
+    <button type="submit" [disabled]="!profileForm.valid">Login</button>
+  </div>
+</div>
