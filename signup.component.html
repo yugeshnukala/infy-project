@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="form-header">
+    <img src="/assets/UserLogIn.jpg" alt="" />
+    <section>User Profile</section>
+  </div>
+  <div class="form-bottom">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="card">
+        <div class="input-field">
+          <section>Name</section>
+          <input type="text" />
+        </div>
+        <div class="input-field">
+          <section>Mobile Number</section>
+          <input type="text" />
+        </div>
+        <div class="input-field">
+          <section>Date of Birth</section>
+          <input type="date" />
+        </div>
+        <div class="input-field">
+          <section>Pincode</section>
+          <input type="text" />
+        </div>
+        <div class="input-field">
+          <section>State</section>
+          <input type="text" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="input-field">
+          <section>Password</section>
+          <input type="text" />
+        </div>
+        <div class="input-field">
+          <section>Email</section>
+          <input type="email" />
+        </div>
+        <div class="input-field">
+          <section>Gender</section>
+          <input type="email" />
+        </div> -->
+        <!-- <div class="input-radio">
+            <section>Gender</section>
+            <div>
+              <label for="male">
+                Male
+                <input type="radio" value="Male" id="male" />
+              </label>
+              <label for="female">
+                Female
+                <input type="radio" value="Female" id="female" />
+              </label>
+            </div>
+          </div> -->
+        <!-- <div class="input-field">
+          <section>City</section>
+          <input type="text" />
+        </div>
+        <div class="input-field">
+          <section>Country</section>
+          <input type="text" />
+        </div>
+      </div>
+    </form>
+    <button type="submit" [disabled]="!profileForm.valid">Register</button>
+  </div>
+</div>
